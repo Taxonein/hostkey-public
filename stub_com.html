@@ -4,63 +4,19 @@
     <meta charset="UTF-8">
     <title>Temporary service interruption | HOSTKEY</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.cdnfonts.com/css/object-sans" rel="stylesheet">
     <style>
-        /* === ALL STYLES INLINED === */
-        @font-face {
-            font-family: 'ObjectSansRegular';
-            src: url('./fonts/ObjectSansRegular.eot');
-            src: url('./fonts/ObjectSansRegular.eot') format('embedded-opentype'),
-            url('./fonts/ObjectSansRegular.woff2') format('woff2'),
-            url('./fonts/ObjectSansRegular.woff') format('woff'),
-            url('./fonts/ObjectSansRegular.ttf') format('truetype'),
-            url('./fonts/ObjectSansRegular.svg#ObjectSansRegular') format('svg');
-        }
 
-
-        @font-face {
-            font-family: 'ObjectSansRegular';
-            src: url('./fonts/ObjectSansRegular.eot');
-            src: url('./fonts/ObjectSansRegular.eot') format('embedded-opentype'),
-            url('./fonts/ObjectSansRegular.woff2') format('woff2'),
-            url('./fonts/ObjectSansRegular.woff') format('woff'),
-            url('./fonts/ObjectSansRegular.ttf') format('truetype'),
-            url('./fonts/ObjectSansRegular.svg#ObjectSansRegular') format('svg');
-        }
-
-        @font-face {
-            font-family: 'ObjectSansHeavy';
-            src: url('./fonts/ObjectSansHeavy.eot');
-            src: url('./fonts/ObjectSansHeavy.eot') format('embedded-opentype'),
-            url('./fonts/ObjectSansHeavy.woff2') format('woff2'),
-            url('./fonts/ObjectSansHeavy.woff') format('woff'),
-            url('./fonts/ObjectSansHeavy.ttf') format('truetype'),
-            url('./fonts/ObjectSansHeavy.svg#ObjectSansHeavy') format('svg');
-        }
-
-        @font-face {
-            font-family: 'ObjectSansHeavy';
-            src: url('./fonts/ObjectSansHeavy.eot');
-            src: url('./fonts/ObjectSansHeavy.eot') format('embedded-opentype'),
-            url('./fonts/ObjectSansHeavy.woff2') format('woff2'),
-            url('./fonts/ObjectSansHeavy.woff') format('woff'),
-            url('./fonts/ObjectSansHeavy.ttf') format('truetype'),
-            url('./fonts/ObjectSansHeavy.svg#ObjectSansHeavy') format('svg');
-        }
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        /*
-        **************************************************
-        **************************************************
-        **************************************************
-        ***************** НЕ НУЖНО END *******************
-        **************************************************
-        **************************************************
-        **************************************************
-        */
+        .cf-error-details{
+            display:none
+        }
+
         html{
             -webkit-tap-highlight-color: transparent;
         }
@@ -89,7 +45,7 @@
             margin-bottom: 60px;
         }
         .stub__main-title {
-            font-family: 'ObjectSansHeavy';
+            font-family: 'Object Sans', sans-serif;
             font-style: normal;
             font-weight: 800;
             font-size: 40px;
@@ -99,7 +55,7 @@
             margin-bottom: 24px;
         }
         .stub__main-text {
-            font-family: 'ObjectSansRegular';
+            font-family: 'Object Sans', sans-serif;
             font-style: normal;
             font-weight: 400;
             font-size: 24px;
@@ -110,7 +66,7 @@
         }
 
         .stub__main-info_title {
-            font-family: 'ObjectSansHeavy';
+            font-family: 'Object Sans', sans-serif;
             font-style: normal;
             font-weight: 800;
             font-size: 24px;
@@ -136,7 +92,7 @@
             border-radius: 16px;
         }
         .stub__main-banner-title {
-            font-family: 'ObjectSansHeavy';
+            font-family: 'Object Sans', sans-serif;
             font-style: normal;
             font-weight: 800;
             font-size: 16px;
@@ -164,7 +120,7 @@
         }
         .stub__main-banner-item ul,
         .stub__main-banner-item p {
-            font-family: 'ObjectSansRegular';
+            font-family: 'Object Sans', sans-serif;
             font-style: normal;
             font-weight: 400;
             font-size: 12px;
@@ -185,7 +141,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-family: 'ObjectSansRegular';
+            font-family: 'Object Sans', sans-serif;
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
@@ -214,7 +170,7 @@
             align-items: center;
         }
         .stub__footer-address {
-            font-family: 'ObjectSansRegular';
+            font-family: 'Object Sans', sans-serif;
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
@@ -485,7 +441,6 @@
                 </div>
             </div>
         </div>
-        ::CLOUDFLARE_ERROR_500S_BOX::
     </div>
 </section>
 <footer class="stub__footer">
@@ -535,53 +490,49 @@
         </div>
     </div>
 </footer>
-
 <script>
-    // Inline JS: LiveChat integration identical to original behavior
-    (function() {
-        window.__lc = window.__lc || {};
-        window.__lc.license = 6343171;
-        (function (n, t, c) {
-            function i(n) {
-                return e._h ? e._h.apply(null, n) : e._q.push(n)
-            }
-            var e = {
-                _q: [], _h: null, _v: "2.0", on: function () {
-                    i(["on", c.call(arguments)])
-                }, once: function () {
-                    i(["once", c.call(arguments)])
-                }, off: function () {
-                    i(["off", c.call(arguments)])
-                }, get: function () {
-                    if (!e._h) throw new Error("[LiveChatWidget] You can't use getters before load.");
-                    return i(["get", c.call(arguments)])
-                }, call: function () {
-                    i(["call", c.call(arguments)])
-                }, init: function () {
-                    var n = t.createElement("script");
-                    n.async = !0, n.type = "text/javascript", n.src = "https://cdn.livechatinc.com/tracking.js";
-                    t.head.appendChild(n);
-                }
-            };
-            !n.__lc.asyncInit && e.init(), n.LiveChatWidget = n.LiveChatWidget || e;
-        }(window, document, [].slice));
+    // Start of LiveChat (www.livechatinc.com) code
 
-        // Attach livechat trigger to elements with class js-livechat-trigger
-        document.querySelectorAll(".js-livechat-trigger").forEach(function(item) {
-            item.addEventListener("click", function(e) {
-                try {
-                    if (typeof LiveChatWidget !== 'undefined' && LiveChatWidget.call) {
-                        LiveChatWidget.call('maximize');
-                    }
-                } catch(err) {}
-                try {
-                    if (typeof LC_API !== 'undefined' && LC_API.open_chat_window) {
-                        LC_API.open_chat_window();
-                    }
-                } catch(err) {}
-            });
-        });
-    })();
+    window.__lc = window.__lc || {};
+    window.__lc.license = 6343171;
+    ;(function (n, t, c) {
+        function i(n) {
+            return e._h ? e._h.apply(null, n) : e._q.push(n)
+        }
+
+        var e = {
+            _q: [], _h: null, _v: "2.0", on: function () {
+                i(["on", c.call(arguments)])
+            }, once: function () {
+                i(["once", c.call(arguments)])
+            }, off: function () {
+                i(["off", c.call(arguments)])
+            }, get: function () {
+                if (!e._h) throw new Error("[LiveChatWidget] You can't use getters before load.");
+                return i(["get", c.call(arguments)])
+            }, call: function () {
+                i(["call", c.call(arguments)])
+            }, init: function () {
+                var n = t.createElement("script");
+                n.async = !0, n.type = "text/javascript", n.src = "https://cdn.livechatinc.com/tracking.js", t.head.appendChild(n)
+            }
+        };
+        !n.__lc.asyncInit && e.init(), n.LiveChatWidget = n.LiveChatWidget || e
+    }(window, document, [].slice))
+
+    // End of LiveChat code
+
+    document.querySelectorAll(".js-livechat-trigger").forEach(item => {
+        item.addEventListener("click", (e) => {
+
+            try{ LiveChatWidget.call('maximize'); }
+            catch(err){}
+
+            try{ LC_API.open_chat_window();}
+            catch(err){}
+
+        })
+    })
 </script>
 </body>
 </html>
